@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3Q Quiz</title>
+
+	<!-- Add style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<br>
+     <center>
+        <div class="col-md-6" style="background-color: orange; color: whitesmoke; font-family: Arial;">
+          <script>  
+          document.write("<h2>If x = 20 and y = 5, compute for the following</h2>");
+          </script>
+        </div>
+      </center>
+      <hr>
+ 
+
+        <script>
+          var a, b, ExpResult, ModResult, GreaterResult, EqualResult, AndResult, NotResult;
+          x = 20; 
+          y = 5;
+          ExpResult = x ** y;
+          ModResult = x % y;
+          GreaterResult = x > y;
+          EqualResult = a == b;
+          AndResult = (x <= y) && (x >= y);
+          NotResult = (x != y) || (x == y);
+        </script> 
+
+  <div class="container-fluid">
+
+    <div class="row">
+   
+    <center>
+    <div class="col-md-8">
+      <h2>Arithmetic Operator</h2>
+
+        <ol type='a' >
+          <li id="ExpResult"></li>
+          <li id="ModResult"></li>
+        </ol>
+
+        <button type="button" class="btn btn-warning" onclick="document.getElementById('ExpResult').innerHTML = 'Exponent: ' + ExpResult; document.getElementById('ModResult').innerHTML = 'Mod: ' + ModResult;">Show Answer</button>
+
+        <h2>Comparison Operator</h2>
+
+        <ol type='a'>
+          <li id="GreaterResult"></li>
+          <li id="EqualResult"></li>
+        </ol>
+
+        <button type="button" class="btn btn-dark" onclick="document.getElementById('GreaterResult').innerHTML = 'is <i>x</i> greater than <i>y</i>? : ' + GreaterResult; document.getElementById('EqualResult').innerHTML = 'is <i>x</i> equal to <i>y</i>? : '+ EqualResult;">Show Answer</button>
+
+        <h2>Logical Operator</h2>
+
+        <ol type='a'>
+          <li id="AndResult"></li>
+          <li id="NotResult"></li>
+        </ol>
+
+        <button type="button" class="btn btn-outline-success" onclick="document.getElementById('AndResult').innerHTML = '(x <= y) && (x >= y) : ' + AndResult; document.getElementById('NotResult').innerHTML = '(x != y) || (x == y) : ' + NotResult;">Show Answer</button>
+
+      </div>
+     </center>
+    </div>
+</div>
+
+     
+
+<hr>
+      <center>
+       <span>&copy; 2025 Casey Uy</span>
+      </center>
+</body>
+</html>
